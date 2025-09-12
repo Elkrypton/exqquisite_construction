@@ -1,0 +1,108 @@
+:root{
+  --primary:#8B1E1E; /* dark red */
+  --dark:#111216;
+  --muted:#6b6f76;
+  --accent:#f5f5f5;
+  --max-width:1200px;
+  --radius:12px;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  color:var(--accent);
+  background:linear-gradient(180deg,#0b0d0f 0%, #0f1113 60%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+.header{background:transparent;padding:18px 28px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#2b2b2b);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:18px}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--accent);text-decoration:none;padding:8px 12px;border-radius:8px}
+.nav a:hover{background:var(--glass)}
+.cta{background:var(--primary);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 460px;gap:32px;align-items:center;padding:60px 0}
+.hero .eyebrow{color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-size:13px}
+.hero h1{font-size:40px;margin:10px 0 12px;line-height:1.05}
+.hero p.lead{color:var(--muted);margin-bottom:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.quick-cta{display:flex;flex-direction:column;gap:10px}
+.btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none}
+.btn.primary{background:var(--primary);color:white;font-weight:700}
+.btn.ghost{border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
+.service{padding:20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));min-height:140px}
+.service h3{margin-top:12px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{border-radius:12px;overflow:hidden}
+.project img{width:100%;height:220px;object-fit:cover;display:block}
+.testimonials{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.testimonial{padding:14px;border-radius:10px;background:rgba(255,255,255,0.02)}
+.about-grid{display:grid;grid-template-columns:1fr 380px;gap:26px;align-items:start}
+.footer{border-top:1px solid rgba(255,255,255,0.03);margin-top:40px;padding:22px 0;display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+.form-row{display:flex;gap:12px}
+.input,textarea{width:100%;padding:12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+textarea{min-height:140px;resize:vertical}
+.meta{color:var(--muted);font-size:13px}
+/* Responsive */
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr;}
+  .projects,.services-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .nav{display:none}
+  .header{padding:12px}
+  .logo{width:44px;height:44px}
+  .projects,.services-grid{grid-template-columns:1fr}
+  .hero h1{font-size:28px}
+}
+
+/* small helper */
+.kicker{font-size:12px;color:var(--muted);text-transform:uppercase}
+.badge{display:inline-block;padding:6px 8px;border-radius:8px;font-weight:600}
+.center{text-align:center}
+
+/* hamburger */
+.hamburger{display:none}
+@media(max-width:640px){.hamburger{display:block;color:var(--accent);background:transparent;border:0;font-size:20px}}
+
+/* Utility */
+.row{display:flex;gap:12px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+
+/* subtle animations */
+.fade-up{opacity:0;transform:translateY(8px);transition:all 420ms ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* contact card in hero */
+.contact-card{display:flex;flex-direction:column;gap:12px}
+.contact-line{display:flex;align-items:center;gap:10px}
+.contact-line svg{opacity:0.9}
+
+/* logo mark text */
+.brand-text{font-weight:700;font-size:18px}
+
+/* form submit */
+.btn-submit{background:var(--primary);border:0;color:white;padding:12px 16px;border-radius:10px;font-weight:700}
+
+/* accessibility focus */
+a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(139,30,30,0.18);outline-offset:2px}
+
+/* small screens for navbar drawer */
+.drawer{position:fixed;right:0;top:0;height:100vh;width:320px;background:linear-gradient(180deg,#0f1113, #0b0d0f);box-shadow:-20px 0 40px rgba(0,0,0,0.6);transform:translateX(320px);transition:transform 320ms ease;padding:28px}
+.drawer.open{transform:translateX(0)}
+.drawer a{display:block;padding:14px 0;color:var(--accent);text-decoration:none}
+
+
+/* small tweaks for contact page */
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+@media(max-width:1000px){.contact-grid{grid-template-columns:1fr}}
+
+/* small logo variant for footer */
+.brand-mini{display:flex;gap:10px;align-items:center}
+.brand-mini .logo{width:36px;height:36px;font-size:14px}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Exqquisite Quality Construction</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="brand"><div class="logo">EQ</div><div><div class="brand-text">Exqquisite Quality</div><div class="small">Construction Inc.</div></div></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Previous Works</a><a href="about.html">About</a><a href="contact.html" class="cta">Get a Quote</a></nav>
+    <button id="hambtn" aria-label="Open menu" class="hamburger">☰</button>
+  </header>
+  <div id="drawer" class="drawer"><button onclick="document.getElementById('drawer').classList.remove('open')">Close ✕</button><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Previous Works</a><a href="about.html">About</a><a href="contact.html">Contact / Get Quote</a></nav></div>
+
+  <main class="container">
+    <section style="padding:22px 0">
+      <h1>Contact & Get a Quote</h1>
+      <p class="meta">Fill out the form and we'll get back to you quickly. You can also call or email Anthony directly.</p>
+
+      <div class="contact-grid">
+        <form data-mailto class="card" style="padding:18px">
+          <div class="form-row">
+            <input class="input" name="name" placeholder="Your name" required>
+            <input class="input" name="email" type="email" placeholder="Email" required>
+          </div>
+          <div style="margin-top:10px">
+            <input class="input" name="phone" placeholder="Phone">
+          </div>
+
+          <div style="margin-top:10px">
+            <textarea name="details" placeholder="Project details (square footage, budget range, timeline)" required></textarea>
+          </div>
+
+          <div style="margin-top:12px" class="row">
+            <button class="btn-submit" type="submit">Send Quote Request</button>
+            <a href="tel:+16462944422" class="btn ghost">Call: (646) 294-4422</a>
+          </div>
+        </form>
+
+        <aside class="card">
+          <h3>Contact Info</h3>
+          <div style="margin-top:8px" class="small">
+            <strong>Contact:</strong> Anthony Myers<br>
+            <strong>Email:</strong> <a href="mailto:Akenyatta3@aol.com">Akenyatta3@aol.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+16462944422">(646) 294-4422</a>
+          </div>
+
+          <div style="margin-top:16px">
+            <h4>Service Area</h4>
+            <div class="small">Serving the greater NYC metro area — reach out for details and scheduling.</div>
+          </div>
+        </aside>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="brand-mini"><div class="logo">EQ</div><div><div>Exqquisite Quality Construction Inc.</div><div class="small">(646) 294-4422 · Akenyatta3@aol.com</div></div></div>
+      <div class="small">© 2025 Exqquisite Quality Construction Inc.</div>
+    </footer>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
