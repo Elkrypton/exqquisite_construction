@@ -91,7 +91,7 @@ body{
 .form-row{display:flex;gap:12px}
 .input,textarea{width:100%;padding:12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
 textarea{min-height:140px;resize:vertical}
-.meta{color:var(--muted);font-size:13px}
+.meta{color:var(--muted);font-size:18px}
 /* Responsive */
 @media(max-width:1000px){
   .hero{grid-template-columns:1fr;}
@@ -144,7 +144,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(139,30,30
 
 
 /* small tweaks for contact page */
-.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px;color: #920428; font-size: 20px;}
 @media(max-width:1000px){.contact-grid{grid-template-columns:1fr}}
 
 /* small logo variant for footer */
