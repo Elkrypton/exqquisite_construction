@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — Exqquisite Quality Construction</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
   <header class="header container">
@@ -20,24 +21,25 @@
       <p class="meta">Fill out the form and we'll get back to you quickly. You can also call or email Anthony directly.</p>
 
       <div class="contact-grid">
-        <form data-mailto class="card" style="padding:18px">
-          <div class="form-row">
-            <input class="input" name="name" placeholder="Your name" required>
-            <input class="input" name="email" type="email" placeholder="Email" required>
-          </div>
-          <div style="margin-top:10px">
-            <input class="input" name="phone" placeholder="Phone">
-          </div>
+  <form id="quoteForm" action="https://formspree.io/f/mzzawwqn" method="POST" class="card" style="padding:18px">
+  <div class="form-row">
+    <input class="input" name="name" placeholder="Your name" required>
+    <input class="input" name="email" type="email" placeholder="Email" required>
+  </div>
+  <div style="margin-top:10px">
+    <input class="input" name="phone" placeholder="Phone">
+  </div>
+  <div style="margin-top:10px">
+    <textarea name="details" placeholder="Project details (square footage, budget range, timeline)" required></textarea>
+  </div>
+  <div style="margin-top:12px" class="row">
+    <button class="btn-submit" type="submit">Send Quote Request</button>
+    <a href="tel:+16462944422" class="btn ghost">Call: (646) 294-4422</a>
+  </div>
+</form>
 
-          <div style="margin-top:10px">
-            <textarea name="details" placeholder="Project details (square footage, budget range, timeline)" required></textarea>
-          </div>
-
-          <div style="margin-top:12px" class="row">
-            <button class="btn-submit" type="submit">Send Quote Request</button>
-            <a href="tel:+16462944422" class="btn ghost">Call: (646) 294-4422</a>
-          </div>
-        </form>
+<!-- Success message -->
+<div id="formSuccess" class="notification">✅ Thank you! Your request has been sent.</div>
 
         <aside class="card">
           <h3>Contact Info</h3>
