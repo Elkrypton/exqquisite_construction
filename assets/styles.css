@@ -40,7 +40,7 @@ transform: translateY(-10px);
 transition: opacity 0.5s ease, transform 0.5s ease;
 }
 /* ends here */
-.stars { color: #8B1E1E; font-size: 26px; margin: 9px 0; }
+.stars { color: #8B1E1E; font-size: 25px; margin: 10px 0; }
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
