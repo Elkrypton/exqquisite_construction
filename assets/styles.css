@@ -104,6 +104,24 @@ display: block;
 opacity: 1;
 transform: translateY(0);
 }
+/* contact email */
+
+a[href^="mailto:"] {
+  color: rgb(255, 255, 255); /* Sets the text color to blue */
+  font-size: 16px; /* Sets the font size to 16 pixels */
+  /* Other font properties can also be added, e.g., font-weight: bold; */
+}
+
+/* ends here */
+
+/* phone contact */
+a[href^="tel:"] {
+  color: rgb(255, 255, 255); /* Sets the text color to green */
+  font-size: 18px; /* Sets the font size to 18 pixels */
+  /* Other font properties can also be added, e.g., text-decoration: none; */
+}
+
+
 .notification.hide {
 opacity: 0;
 transform: translateY(-10px);
